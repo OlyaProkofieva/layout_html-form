@@ -12,7 +12,9 @@
   <body>
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="POST">
+      method="POST"
+      autocomplete="off"
+    >
       <fieldset class="formGroup">
         <legend>Personal information</legend>
         <div class="input">
@@ -21,7 +23,6 @@
             type="text"
             name="surname"
             id="surname"
-            autocomplete="off"
           >
         </div>
         <div class="input">
@@ -91,18 +92,21 @@
 
       <fieldset class="formGroup">
         <legend>An interesting fact about you!</legend>
-        <div class="input">
-          <label>Do you love cats?</label>
-          <input
-            type="radio"
-            name="catsQuestion"
-            value="yes"
-          >Yes
-          <input
-            type="radio"
-            name="catsQuestion"
-            value="no"
-          >No
+        <div class="input">Do you love cats?
+          <label>
+            <input
+              type="radio"
+              name="catsQuestion"
+              value="yes"
+            >Yes
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="catsQuestion"
+              value="no"
+            >No
+          </label>
         </div>
         <div class="input">
           <label for="color">What is your favorite color?</label>
